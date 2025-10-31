@@ -52,7 +52,7 @@ resource "aws_security_group" "web_sg" {
 }
 
 resource "aws_s3_bucket" "logs" {
-  bucket = "my-app-logs-${var.environment}"
+  bucket = "my-app-logs-production-ai-agent"
   
   tags = {
     Name        = "Application Logs"
